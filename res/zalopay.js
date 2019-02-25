@@ -68,6 +68,7 @@
             console.log(deeplinks);
             if (deeplinks && isStr(deeplinks)) {
                 window.location.href = deeplinks;
+                return;
             }
             ZaloPay._apiQueue = ZaloPay._apiQueue || [];
             ZaloPay._apiQueue.push(args);
