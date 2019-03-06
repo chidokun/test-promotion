@@ -50,19 +50,6 @@
             document.getElementById("short-content").style.display = "none";
             document.getElementById("full-content").style.display = "block";
             }
-
-            if (ZaloPay) {
-                console.log(ZaloPay);
-                if (!ZaloPay.isZaloPay) {
-                    console.log("đéo phải zalopay");
-                    var btnAction = document.getElementById("btn-action");
-                    console.log(btnAction);
-                    var appID = btnAction.getAttribute("appID");
-                    console.log(appID);
-                    btnAction.setAttribute("href", "https://zalopay.vn/deeplink/?type=app&appid=" + appID);
-                    btnAction.removeAttribute("onclick");
-                }
-            }
         </script>
         <title>Ngày Vàng Mobifone 27/02</title>
     </head>
@@ -156,6 +143,19 @@
             </div>
             
         </div>
-    
+<script type="text/javascript">
+if (ZaloPay) {
+                console.log(ZaloPay);
+                if (!ZaloPay.isZaloPay) {
+                    console.log("đéo phải zalopay");
+                    var btnAction = document.getElementById("btn-action");
+                    console.log(btnAction);
+                    var appID = btnAction.getAttribute("appID");
+                    console.log(appID);
+                    btnAction.setAttribute("href", "https://zalopay.vn/deeplink/?type=app&appid=" + appID);
+                    btnAction.removeAttribute("onclick");
+                }
+            }
+</script> 
 
 </body></html>
