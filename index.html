@@ -50,6 +50,13 @@
             document.getElementById("short-content").style.display = "none";
             document.getElementById("full-content").style.display = "block";
             }
+
+            if (ZaloPay) {
+                console.log(ZaloPay);
+                if (!ZaloPay.isZaloPay) {
+                    console.log("đéo phải zalopay");
+                }
+            }
         </script>
         <title>Ngày Vàng Mobifone 27/02</title>
     </head>
@@ -137,7 +144,7 @@
                     </div>
                 </div>
                 
-                <div class="bggrey"><div class="bxbtnfix"><a href="https://zalopay.vn/deeplink/?type=app&appid=61" class="btnblue">NẠP NGAY</a></div></div>
+                <div class="bggrey"><div class="bxbtnfix"><a id="btn-action" href="https://zalopay.vn/deeplink/?type=app&appid=61" class="btnblue">NẠP NGAY</a></div></div>
                 
                 
             </div>
