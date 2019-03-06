@@ -57,6 +57,7 @@
                     console.log("đéo phải zalopay");
                     var appID = document.getElementById("btn-action").getAttribute("appID");
                     document.getElementById("btn-action").setAttribute("href", "https://zalopay.vn/deeplink/?type=app&appid=" + appID);
+                    document.getElementById("btn-action").removeAttribute("onclick");
                 }
             }
         </script>
@@ -146,7 +147,7 @@
                     </div>
                 </div>
                 
-                <div class="bggrey"><div class="bxbtnfix"><a id="btn-action" appID="61" href="https://zalopay.vn/deeplink/?type=app&appid=61" class="btnblue">NẠP NGAY</a></div></div>
+                <div class="bggrey"><div class="bxbtnfix"><a id="btn-action" appID="61" onclick="ZaloPay.promotionEvent({campaignId:143, url: 'zalo://launch?params=6', packageId:'com.zing.zalo',internalApp:61, alternateUrl:'https://play.google.com/store/apps/details?id=com.zing.zalo' }, utils.callback);" class="btnblue">NẠP NGAY</a></div></div>
                 
                 
             </div>
