@@ -55,6 +55,8 @@
                 console.log(ZaloPay);
                 if (!ZaloPay.isZaloPay) {
                     console.log("đéo phải zalopay");
+                    var appID = document.getElementById("btn-action").getAttribute("appID");
+                    document.getElementById("btn-action").setAttribute("href", "https://zalopay.vn/deeplink/?type=app&appid=" + appID);
                 }
             }
         </script>
@@ -144,7 +146,7 @@
                     </div>
                 </div>
                 
-                <div class="bggrey"><div class="bxbtnfix"><a id="btn-action" href="https://zalopay.vn/deeplink/?type=app&appid=61" class="btnblue">NẠP NGAY</a></div></div>
+                <div class="bggrey"><div class="bxbtnfix"><a id="btn-action" appID="61" href="https://zalopay.vn/deeplink/?type=app&appid=61" class="btnblue">NẠP NGAY</a></div></div>
                 
                 
             </div>
