@@ -55,9 +55,10 @@
                 console.log(ZaloPay);
                 if (!ZaloPay.isZaloPay) {
                     console.log("đéo phải zalopay");
-                    var appID = document.getElementById("btn-action").getAttribute("appID");
-                    document.getElementById("btn-action").setAttribute("href", "https://zalopay.vn/deeplink/?type=app&appid=" + appID);
-                    document.getElementById("btn-action").removeAttribute("onclick");
+                    var btnAction = document.getElementById("btn-action");
+                    var appID = btnAction.getAttribute("appID");
+                    btnAction.setAttribute("href", "https://zalopay.vn/deeplink/?type=app&appid=" + appID);
+                    btnAction.removeAttribute("onclick");
                 }
             }
         </script>
